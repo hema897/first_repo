@@ -1,27 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Hello from './greet';
+import { useState } from 'react';
+import {Greet} from './customComponents/greet';
+import Welcome from './customComponents/classComponent';
+import JsxFunction from './customComponents/exampleJsx';
 
 
 
-function app(props) {
-  let s="Hello"
+
+function App(props) {
+  let s="Hello";
+  
+
   console.log(props)
   return (
     <div>
       <h1>{s} {props.name} and your age {props.age}</h1>
-      <Hello/>
+      <h2>{props.count}</h2>
+      <Greet/>
+      <Welcome/>
+      <JsxFunction>Hey</JsxFunction>
     </div>
-    // React.createElement(
-    //   'div',
-    //   null,
-    //   React.createElement(
-    //     'h1',null,"Hello World1"
-    //   )
-    // )
-    // <h1>Hello World</h1>
   );
 }
 
-export default app;
+export default App;
