@@ -18,6 +18,10 @@ import KeyInListRendeing from "./customComponents/keyInListRendeing"
 import LearnStyling from "./customComponents/learnStyling"
 import InlineStyle from "./customComponents/inlineStyle"
 import styles from "./css/styleModule.module.css"
+import Formhanler from "./customComponents/formhanler"
+import LifeCycleMethodA from "./customComponents/lifeCycleMethodA"
+import LifeCycleB from "./customComponents/lifeCycleB"
+import ParentOfPureRegularCom from "./customComponents/parentOfPureRegularCom"
 
 
 function App(props) {
@@ -25,8 +29,12 @@ function App(props) {
  
   return (
     <div className={styles.moduleDemo}>
-      <InlineStyle />
-      <LearnStyling />
+      <ParentOfPureRegularCom />
+      {/* <LifeCycleB /> */}
+      {/* <LifeCycleMethodA /> */}
+      {/* <Formhanler /> */}
+      {/* <InlineStyle />
+      <LearnStyling /> */}
       {/* <KeyInListRendeing /> */}
       {/* <ListRendering /> */}
       {/* <ConditionalRendering /> */}
@@ -44,7 +52,6 @@ function App(props) {
       <Welcome data="ntg"/>
       <JsxFunction>Hey</JsxFunction> */}
       {/* <State /> */}
-      hello
 
     </div>
   );
