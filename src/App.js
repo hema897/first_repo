@@ -22,14 +22,50 @@ import Formhanler from "./customComponents/formhanler"
 import LifeCycleMethodA from "./customComponents/lifeCycleMethodA"
 import LifeCycleB from "./customComponents/lifeCycleB"
 import ParentOfPureRegularCom from "./customComponents/parentOfPureRegularCom"
+import RefsDemo from "./customComponents/refsDemo"
+import RefParentComponent from "./customComponents/refParentComponent"
+import ForwordRefParent from "./customComponents/forwordRefParent"
+import PortalDemo from "./customComponents/portalDemo"
+import ThrowErrorToTestErrBoundary from "./customComponents/throwErrorToTestErrBoundary"
+import ErrorBoundary from './customComponents/errorBoundary';
+import ClickCounterHighOrd from "./customComponents/clickCounterHighOrd"
+import HoverCounterHighOrd from "./customComponents/hoverCounterHighOrd"
+import RenderProps from "./customComponents/renderProps"
+import ClickCounterRenderProps from "./customComponents/clickCounterRenderProps"
+import HoverCounterRenderProps from "./customComponents/hoverCounterRenderProps"
+import ComponentA from "./customComponents/context/componetA"
+import {ProviderContext} from './customComponents/context/context'
 
 
 function App(props) {
-  let s="Hello";
+  let s={name:"hema"};
  
   return (
     <div className={styles.moduleDemo}>
-      <ParentOfPureRegularCom />
+      <ProviderContext value={s}>
+        <ComponentA />
+      </ProviderContext>
+      
+      {/* <RenderProps render={(count,incrementCount)=>
+        (<ClickCounterRenderProps count={count} incrementCount={incrementCount} />)
+      } /> */}
+      {/* <RenderProps>
+      {(count,incrementCount)=>(<HoverCounterRenderProps count={count} incrementCount={incrementCount}/>)}
+      </RenderProps> */}
+      {/* <ClickCounterHighOrd />
+      <HoverCounterHighOrd name="hema" /> */}
+      {/* <ErrorBoundary>
+        <ThrowErrorToTestErrBoundary heroName="batMan"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+        <ThrowErrorToTestErrBoundary heroName="jokerr"/>
+      </ErrorBoundary> */}
+      
+      {/* <PortalDemo />
+      <ForwordRefParent /> */}
+      {/* <RefParentComponent /> */}
+      {/* <RefsDemo /> */}
+      {/* <ParentOfPureRegularCom /> */}
       {/* <LifeCycleB /> */}
       {/* <LifeCycleMethodA /> */}
       {/* <Formhanler /> */}
