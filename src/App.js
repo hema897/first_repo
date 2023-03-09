@@ -35,16 +35,43 @@ import ClickCounterRenderProps from "./customComponents/clickCounterRenderProps"
 import HoverCounterRenderProps from "./customComponents/hoverCounterRenderProps"
 import ComponentA from "./customComponents/context/componetA"
 import {ProviderContext} from './customComponents/context/context'
-
+import GetHttp from './customComponents/http/getHttp';
+import PostHttp from './customComponents/http/postHttp';
+import ClsComCounter from './customComponents/hooks/clsComCounter'
+import FunComCounter from './customComponents/hooks/useState1'
+import FunComCountAdvance from './customComponents/hooks/useState2';
+import UseState3 from './customComponents/hooks/useState3';
+import UseState4 from './customComponents/hooks/useState4';
+import UseEffectClsCompRecap  from'./customComponents/hooks/useEffect/useEffectClsCompRecap'
+import UseEffect1 from './customComponents/hooks/useEffect/useEffect1';
+import ClassCompConditionalRender from './customComponents/hooks/useEffect/classCompConditionalRender';
+import ConditionalRenderUseEffect from './customComponents/hooks/useEffect/conditionalRenderUseEffect';
+import ClsCompRenderOnlyOnce from './customComponents/hooks/useEffect/clsCompRenderOnlyOnce';
+import UseEffectRenderOnce from './customComponents/hooks/useEffect/useEffectRenderOnce'
+import UseEffectCleanUp from './customComponents/hooks/useEffect/useEffectCleanUp';
 
 function App(props) {
   let s={name:"hema"};
  
   return (
     <div className={styles.moduleDemo}>
-      <ProviderContext value={s}>
+      <UseEffectCleanUp />
+       {/* <ClsCompRenderOnlyOnce/>
+       <UseEffectRenderOnce /> */}
+      {/* <ClassCompConditionalRender />
+      < ConditionalRenderUseEffect /> */}
+      {/* <UseEffect1 /> */}
+      {/* <UseEffectClsCompRecap /> */}
+      {/* <UseState4 /> */}
+      {/* <UseState3 /> */}
+      {/* <FunComCountAdvance /> */}
+      {/* <FunComCounter /> */}
+      {/* <ClsComCounter /> */}
+      {/* <PostHttp /> */}
+      {/* <GetHttp /> */}
+      {/* <ProviderContext value={s}>
         <ComponentA />
-      </ProviderContext>
+      </ProviderContext> */}
       
       {/* <RenderProps render={(count,incrementCount)=>
         (<ClickCounterRenderProps count={count} incrementCount={incrementCount} />)
