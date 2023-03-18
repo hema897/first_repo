@@ -64,7 +64,15 @@ import ComponentC from './customComponents/hooks/useReducer/useReducerWithUseCon
 import FetchingDataUseReducer from './customComponents/hooks/useReducer/fetchingDataUseReducerPart1';
 import FetchingDataUseReducerPart2 from './customComponents/hooks/useReducer/fetchingDataUseReducerPart2';
 import ParentCallBack from './customComponents/hooks/useCallBack/parentCallBack';
-import UseMemo from './customComponents/hooks/useMemo/useMemo'
+import UseMemo from './customComponents/hooks/useMemo/useMemo';
+import UseRefPart1 from './customComponents/hooks/useRef/useRefPart1';
+import RefClassComponent from './customComponents/hooks/useRef/refClassComponent';
+import UseRefPart2 from './customComponents/hooks/useRef/useRefPart2';
+import SetDocumentTitleOne from './customComponents/hooks/customHooks/setDocumentTitleOne';
+import SetDocumentTitleTwo from './customComponents/hooks/customHooks/setDocumentTitleTwo';
+import CounterOnePart2 from './customComponents/hooks/customHooks/counterOnePart2';
+import CounterTwoPart2 from './customComponents/hooks/customHooks/counterTwoPart2';
+import FormPart3 from './customComponents/hooks/customHooks/formPart3';
 
 
 export const UserContext = React.createContext()
@@ -88,7 +96,15 @@ function App(props) {
  
   return (
     <div className={styles.moduleDemo}>
-      <UseMemo />
+      <FormPart3 />
+      {/* <CounterOnePart2 />
+      <CounterTwoPart2 /> */}
+      {/* <SetDocumentTitleOne />
+      <SetDocumentTitleTwo /> */}
+      {/* <RefClassComponent />
+      <UseRefPart2 /> */}
+      {/* <UseRefPart1 /> */}
+      {/* <UseMemo /> */}
       {/* <ParentCallBack/> */}
       {/* <FetchingDataUseReducerPart2 /> */}
       {/* <FetchingDataUseReducer /> */}
